@@ -1,6 +1,27 @@
 # Muhammad Mudassir: portfolio
 
-Next.js (App Router) and TypeScript. Dark and light mode, project detail views, count-up numbers and an AI assistant.
+A fast, accessible developer portfolio built with **Next.js 15 (App Router), React 19 and TypeScript**. It has dark and light mode, a filterable project grid with a full page for every project, count-up numbers, SEO basics and an AI assistant that answers from my own resume.
+
+![Hero, dark mode](docs/screenshots/hero-dark.png)
+
+| Light mode | Mobile |
+| --- | --- |
+| ![Hero, light mode](docs/screenshots/hero-light.png) | <img src="docs/screenshots/mobile.png" alt="Mobile view" width="260"> |
+
+![Projects](docs/screenshots/projects.png)
+
+## Features
+
+- **Dark and light mode.** Colours, and every project image, follow the mode. The choice is remembered.
+- **Projects.** Filter by category. Each project has its own page (`/projects/lead-radar`) with an overview, highlights, my role, tech stack and numbers that count up.
+- **AI assistant.** A server route (`/api/chat`) calls the OpenAI API with the key kept on the server. It answers only from my own data, is rate limited, and falls back to built-in answers if there is no key.
+- **Sections.** Proof numbers, what I bring to a team, projects, services, process, skills, experience, about, FAQ and contact.
+- **SEO.** Metadata, Open Graph image, sitemap, robots and JSON-LD.
+- **Accessible.** Keyboard friendly, visible focus, and reduced-motion support.
+
+## Tech stack
+
+Next.js 15 · React 19 · TypeScript · plain CSS with design tokens · OpenAI API · deployed on Vercel.
 
 ## Run it
 
